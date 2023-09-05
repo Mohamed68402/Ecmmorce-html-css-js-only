@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Products</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="setData.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+          <div class="header-logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="" /></a>
+          </div>
+          <div class="header-list">
+            <nav class="header-list-nav">
+              <ul>
+                <li><a  href="../index.html">Home</a></li>
+                <li><a href="../aboutus/aboutUs.html">About</a></li>
+                <li><a href="../contactus/contactus.html">Contact Us</a></li>
+                <li><a class="active" href="../addData/setdata.html">Add Products</a></li>
+              </ul>
+            </nav>
+            <div class="header-list-icon">
+              <a id="bagShopping" ><i class="fa fa-bag-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    <form id="productForm">
+        <h1>Enter Product Data</h1>
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+        
+        <label for="price">Price:</label>
+        <input type="number" id="price" required>
+
+
+        <label for="image">Product Image:</label>
+        <input type="file" id="image" accept="image/*" required>
+        <button id="readImageBtn">Read Image</button>
+
+        
+        <button type="button" id="addProductBtn">Add Product</button>
+        <button type="button" id="displayProductsBtn">Display Products</button>
+    </form>
+
+    <script src="INPUT.JS"></script>
+</body>
+</html>
